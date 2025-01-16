@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>SINTRAMES</title>
+    <link rel="stylesheet" href="sindcss.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+            <button class="btnlogin-popup">Entrar</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Entrar</h2>
+            <form action="#" class="loginForm">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="people"></ion-icon></span>
+                    <input type="text" id="login-matricula" class="input" required>
+                    <label>Matricula</label>
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="key"></ion-icon></span>
+                    <input type="password" id="login-senha" class="password" required>
+                    <label>Senha</label>
+                    <span class="error-message"></span>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">Salvar acesso</label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+                <div class="login-register">
+                    <p>Não tem cadastro?<a href="#" class="register-link"> Cadastrar</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Cadastrar</h2>
+            <form action="#" class="registerForm">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="information-circle-outline"></ion-icon></span>
+                    <input type="text" id="register-nome" class="input" required>
+                    <label>Nome</label>
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="people"></ion-icon></span>
+                    <input type="text" id="register-matricula" class="input" required>
+                    <label>Matricula</label>
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="key"></ion-icon></span>
+                    <input type="password" id="register-senha" class="password" required>
+                    <label>Senha</label>
+                    <span class="error-message"></span>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">Li e concordo com os termos de acesso</label>
+                </div>
+                <button type="submit" class="btn">Cadastrar</button>
+                <div class="login-register">
+                    <p>Já possui um cadastro?<a href="#" class="login-link">Entrar</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="JavaScript/sind.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
